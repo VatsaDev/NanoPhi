@@ -14,7 +14,7 @@ init_from = 'gpt2-medium' # 355m
 always_save_checkpoint = False
 
 batch_size = 4
-gradient_accumulation_steps = 1024
+gradient_accumulation_steps = 256
 max_iters = 250
 learning_rate = 5e-4
 decay_lr = False
