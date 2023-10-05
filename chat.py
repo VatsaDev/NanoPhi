@@ -10,10 +10,10 @@ import requests
 init_from = 'resume'
 out_dir = '/content/drive/MyDrive/Model' # finetuned model directory
 num_samples = 1 # no samples. 1 for 1 chat at a time
-max_new_tokens = 150
+max_new_tokens = 300
 ans_long=True
-temperature = 0.9
-top_k = 10 # retain only the top_k most likely tokens, clamp others to have 0 probability
+temperature = 0.85
+top_k = 8 # retain only the top_k most likely tokens, clamp others to have 0 probability
 device = 'cuda' # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1', etc.
 dtype = 'bfloat16' if torch.cuda.is_available() and torch.cuda.is_bf16_supported() else 'float16' # 'float32' or 'bfloat16' or 'float16'
 compile = True # use PyTorch 2.0 to compile the model to be faster
