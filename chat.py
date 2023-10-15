@@ -31,6 +31,7 @@ def download_ckpt(url):
   if response.status_code == 200:
     with open('ckpt.pt', 'wb') as f:
       f.write(response.content)
+    print("Got weights")
   else:
     print('Error downloading file:', response.status_code)
 
